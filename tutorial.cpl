@@ -1,0 +1,36 @@
+right object 1 with ! is
+end object;
+
+right object prod(A, B) with pair is
+  pi1 : prod -> A
+  pi2 : prod -> B
+end object;
+
+left object coprod(A, B) with case is
+  in1 : A -> coprod
+  in2 : B -> coprod
+end object;
+
+left object nat with pr is
+  0 : 1 -> nat
+  s : nat -> nat
+end object;
+
+left object list(A) with prl is
+  nil : 1 -> list
+  cons : prod(A, list) -> list
+end object;
+
+right object exp(A, B) with curry is
+  ev : prod(exp, A) -> B
+end object;
+
+left object bool with if is
+  true : 1 -> bool
+  false : 1 -> bool
+end object;
+
+left object maybe(A) with maybe is
+  nothing : 1 -> maybe
+  just : A -> maybe
+end object;
