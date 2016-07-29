@@ -34,3 +34,5 @@ left object maybe(A) with maybe is
   nothing : 1 -> maybe
   just : A -> maybe
 end object;
+
+let add = ev.pair(pr(curry(pi2), curry(s.ev)).pi1, pi2)
