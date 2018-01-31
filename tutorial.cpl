@@ -35,4 +35,9 @@ left object maybe(A) with maybe is
   just : A -> maybe
 end object;
 
+left object either(A, B) with either is
+  left  : A -> either
+  right : B -> either
+end object;
+
 let add = ev.pair(pr(curry(pi2), curry(s.ev)).pi1, pi2)
